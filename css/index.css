@@ -2,14 +2,14 @@
 
 :root{
 
-    --bg-color: #fff;
+    --bg-color: #08080d;
 
-    --btn-color: #fdfdfd;/* button color*/
-    --btn-bg: #000;/* button bg color*/
+    --btn-color: #ffffff;/* button color*/
+    --btn-bg: #6d5bff;/* button bg color*/
 
-    --primary-text-color: #000;
-    --header-link-hover: #000;
-    --input-hover-bd-color: #000;
+    --primary-text-color: #ffffff;
+    --header-link-hover: #ffffff;
+    --input-hover-bd-color: #6d5bff;
 }
 
 
@@ -18,10 +18,77 @@ html {
     font-family: "Ubuntu", sans-serif;
 }
 
+/* ---------------- Ambient background lighting & texture ---------------- */
+/* Keeps the page dark, but replaces the flat black with a subtle lit,
+   textured surface: fine grain + faint diagonal light streaks + a soft
+   glow near the top of the page, all in white/grey so the theme stays
+   monochrome (no purple tint on the base background itself). */
+
+body{
+    position: relative;
+    background-color: #0b0b10;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+    background-image:
+        radial-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.028) 0px, rgba(255, 255, 255, 0.028) 1px, transparent 1px, transparent 90px),
+        radial-gradient(ellipse 1100px 650px at 50% -8%, rgba(255, 255, 255, 0.06), transparent 60%),
+        radial-gradient(ellipse 700px 500px at 90% 30%, rgba(255, 255, 255, 0.03), transparent 65%),
+        radial-gradient(ellipse 800px 550px at 5% 70%, rgba(255, 255, 255, 0.025), transparent 65%);
+    background-size: 3px 3px, auto, auto, auto, auto;
+    background-repeat: repeat, repeat, no-repeat, no-repeat, no-repeat;
+}
+
+/* Soft centred glow, meant to sit behind a section's heading.
+   Add class="glow-bg" to any <section> (it needs no extra markup). */
+.glow-bg{
+    position: relative;
+    isolation: isolate;
+}
+
+.glow-bg::before{
+    content: "";
+    position: absolute;
+    top: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(950px, 140%);
+    height: 55%;
+    min-height: 320px;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0) 70%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Faint diagonal light rays confined to a corner, like the footer of the
+   reference screenshots. Add class="ray-corner" to a section/footer. */
+.ray-corner{
+    position: relative;
+    overflow: hidden;
+}
+
+.ray-corner::after{
+    content: "";
+    position: absolute;
+    right: -10%;
+    bottom: -35%;
+    width: 700px;
+    height: 450px;
+    background: repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 16px);
+    -webkit-mask-image: radial-gradient(circle at 75% 70%, black, transparent 70%);
+    mask-image: radial-gradient(circle at 75% 70%, black, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
 header{
-    /* background-color: #fff;
-    color: #000; */
-    color: #4b4b4b;
+    color: #ffffff;
 }
 
 
@@ -68,8 +135,7 @@ header > .collapsible-header{
 }
 
 .edge-gradient{
-    background: rgb(28, 28, 28);
-    background: linear-gradient(83deg, #ffffff 0%, #ffffff00 20%, #ffffff00 80%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(83deg, #08080d 0%, #08080d00 20%, #08080d00 80%, #08080d 100%);
 }
 
 .scroller{
@@ -167,12 +233,12 @@ header > .collapsible-header{
 }
 
 .footer-link{
-    color: #434242;
+    color: #a1a1aa;
     transition: color 0.3s;
 }
 
 .footer-link:hover{
-    color: #0b0b0b;
+    color: #ffffff;
 }
 
 /* Next & previous buttons */
@@ -207,17 +273,156 @@ header > .collapsible-header{
 
 
 
+/* ---------------- Video showcase grid (Instagram explore style) ---------------- */
+/* Manually placed (not auto-flow) so the tall and wide tiles genuinely
+   interlock like puzzle pieces, instead of auto-placement grouping all
+   the same-shaped tiles together. */
+
+.video-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 10px;
+}
+
+.video-tile{
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+}
+
+.video-tile video{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Explicit puzzle placement (desktop): a tall tile on the left with two
+   wide tiles stacked beside it (same combined height, no gap between
+   them), then two more tall tiles underneath. */
+.video-pos-1{ grid-column: 1 / 2; grid-row: 1 / 3; }
+.video-pos-2{ grid-column: 2 / 4; grid-row: 1 / 2; }
+.video-pos-3{ grid-column: 2 / 4; grid-row: 2 / 3; }
+.video-pos-4{ grid-column: 1 / 2; grid-row: 3 / 5; }
+.video-pos-5{ grid-column: 2 / 3; grid-row: 3 / 5; }
+.video-pos-6{ grid-column: 3 / 4; grid-row: 3 / 5; }
+
+.video-overlay{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 12px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0) 45%);
+}
+
+.video-play-btn,
+.video-mute-btn{
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    backdrop-filter: blur(4px);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.video-play-btn:hover,
+.video-mute-btn:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    transform: scale(1.08);
+}
+
+@media (max-width: 768px){
+    .video-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 190px;
+    }
+
+    .video-pos-1{ grid-column: 1 / 2; grid-row: 1 / 3; }
+    .video-pos-4{ grid-column: 2 / 3; grid-row: 1 / 3; }
+    .video-pos-2{ grid-column: 1 / 3; grid-row: 3 / 4; }
+    .video-pos-5{ grid-column: 1 / 2; grid-row: 4 / 6; }
+    .video-pos-6{ grid-column: 2 / 3; grid-row: 4 / 6; }
+    .video-pos-3{ grid-column: 1 / 3; grid-row: 6 / 7; }
+}
+
+/* ---------------- Article cards (Map Your Journey style) ---------------- */
+
+.article-card{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.article-card:hover{
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+}
+
+.article-card-image{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.article-card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.article-card:hover .article-card-image img{
+    transform: scale(1.05);
+}
+
+.article-tag{
+    align-self: flex-start;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background-color: rgba(109, 91, 255, 0.15);
+    color: #a99bff;
+    border: 1px solid rgba(109, 91, 255, 0.3);
+}
+
+.article-desc{
+    color: #a1a1aa;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
 /* Style for the collapsible content such as faq commonly known as: accordion */
 
 .faq{
-    background-color: #fff;
-    color: #000000;
-    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.03);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .faq-accordion {
     background-color: inherit;
-    color: #000000;
+    color: #ffffff;
     cursor: pointer;
     padding: 15px 18px;
     width: 100%;
@@ -229,7 +434,7 @@ header > .collapsible-header{
 
 .faq .content {
     padding: 0px 18px;
-    color: #232323;
+    color: #a1a1aa;
     height: max-content;
     overflow: hidden;
     background-color: transparent;
@@ -243,29 +448,113 @@ header > .collapsible-header{
     /* background-color: #2e2c2c; */
 }
 
-@media not all and (min-width: 1024px) {
-    header .collapsible-header {
-        position: fixed;
-        right: 0px;
-        flex-direction: column;
-        opacity: 0;
-        height: 100vh;
-        min-height: 100vh;
-        height: 100dvh;
-        width: 0vw;
-        justify-content: space-between;
-        padding: 5px;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        place-items: end;
-        background-color: #040404;
-        color: #ffffff;
-        overflow-y: auto;
-        box-shadow: 3px 0px 3px 2px #9f9f9f;
-    }
+/* ---------------- Neon logo / brand glow ---------------- */
 
-    .header-links{
-        color: rgb(255, 255, 255);
-    }
-    
+.logo-glow{
+    filter:
+        drop-shadow(0 0 4px rgba(180, 130, 255, 0.85))
+        drop-shadow(0 0 12px rgba(155, 92, 255, 0.6))
+        drop-shadow(0 0 26px rgba(120, 60, 220, 0.4));
+    animation: logo-pulse 3.5s ease-in-out infinite;
 }
+
+@keyframes logo-pulse{
+    0%, 100%{
+        filter:
+            drop-shadow(0 0 4px rgba(180, 130, 255, 0.85))
+            drop-shadow(0 0 12px rgba(155, 92, 255, 0.6))
+            drop-shadow(0 0 26px rgba(120, 60, 220, 0.4));
+    }
+    50%{
+        filter:
+            drop-shadow(0 0 6px rgba(180, 130, 255, 1))
+            drop-shadow(0 0 18px rgba(155, 92, 255, 0.8))
+            drop-shadow(0 0 36px rgba(120, 60, 220, 0.55));
+    }
+}
+
+.brand-glow{
+    text-shadow:
+        0 0 6px rgba(155, 92, 255, 0.7),
+        0 0 18px rgba(109, 91, 255, 0.4);
+}
+
+/* ---------------- "Learn more" popup modal ---------------- */
+
+.modal-overlay{
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.modal-overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-box{
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    padding: 36px 30px;
+    border-radius: 16px;
+    background-color: #0d0d14;
+    color: #ffffff;
+    border: 1px solid rgba(155, 92, 255, 0.9);
+    box-shadow:
+        0 0 10px 1px rgba(155, 92, 255, 0.6),
+        0 0 34px 6px rgba(109, 91, 255, 0.35),
+        inset 0 0 22px rgba(109, 91, 255, 0.08);
+    transform: scale(0.94);
+    transition: transform 0.25s ease;
+}
+
+.modal-overlay.active .modal-box{
+    transform: scale(1);
+}
+
+.modal-title{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: #ffffff;
+}
+
+.modal-text{
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+.modal-close{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.modal-close:hover{
+    opacity: 1;
+}
+
+

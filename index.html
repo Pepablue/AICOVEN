@@ -32,63 +32,36 @@
         />
     </head>
     <body
-        class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-white tw-text-black"
+        class="tw-flex tw-min-h-[100vh] tw-flex-col tw-text-white"
     >
         <header
-            class="tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] lg:tw-justify-around"
+            class="tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[130px] tw-w-full tw-place-items-center tw-bg-opacity-0 tw-px-[5%]"
         >
-            <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="">
+            <a class="tw-relative tw-z-10 tw-h-[120px] tw-w-[120px] tw-p-[4px]" href="">
                 <img
                     src="./assets/logo/logo.png"
                     alt="logo"
-                    class="tw-object tw-h-full tw-w-full"
+                    class="tw-object logo-glow tw-h-full tw-w-full"
                 />
             </a>
-           <!-- <div
-                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
-                id="collapsed-header-items"
+            <span
+                class="tw-absolute tw-left-1/2 tw-top-1/2 tw--translate-x-1/2 tw--translate-y-1/2 tw-text-xl tw-font-bold tw-uppercase tw-tracking-[4px] tw-text-white brand-glow max-md:tw-text-base"
             >
-                <div
-                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
-                >
-                    <a class="header-links" href=""> About us </a>
-                    <a class="header-links" href="#pricing"> Pricing </a>
-                    <a class="header-links" href=""> Solutions </a>
-                    <a class="header-links" href=""> Features </a>
-                    <a class="header-links" href=""> Company </a>
-                </div>
-                <div
-                    class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
-                >
-                    <a
-                        href=""
-                        aria-label="signup"
-                        class="tw-rounded-md tw-border-[1px] tw-border-black tw-bg-transparent tw-px-3 tw-py-2 tw-text-black tw-transition-colors tw-duration-[0.3s] hover:tw-bg-black hover:tw-text-white"
-                    >
-                        <span>Download</span>
-                        <i class="bi bi-download"></i>
-                    </a>
-                </div>
-            </div>-->
-           <!-- <button
-                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-black lg:tw-hidden"
-                onclick="toggleHeader()"
-                aria-label="menu"
-                id="collapse-btn"
-            ></button>-->
+                AI Coven
+            </span>
         </header>
 
         <section
-            class="hero-section tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
+            class="hero-section glow-bg tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
             id="hero-section"
         >   
 
             <div class="tw-w-full tw-h-full tw-p-[5%]
                         tw-place-content-center tw-min-h-[100vh]
-                        tw-gap-6 max-xl:tw-place-items-center
-                        tw-flex max-xl:tw-flex-col">
+                        tw-gap-6
+                        tw-flex tw-flex-col tw-place-items-center">
                     <div
-                        class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-max-w-[50%] tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4"
+                        class="tw-flex tw-h-full tw-w-full tw-max-w-[800px] tw-flex-col tw-place-content-center tw-place-items-center tw-gap-6 tw-p-[5%] max-lg:tw-p-4"
                     >
                         <div
                             class="tw-flex tw-flex-col tw-place-content-center tw-items-center"
@@ -96,77 +69,52 @@
                             <div
                                 class="reveal-up tw-text-center tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
                             >
-                                <span class=""> DONE FOR YOU CONTENT  </span>
+                                <span class=""> Done for you content. </span>
                                 <br />
-                                <span class=""> + CUSTOMER RETENTION SYSTEMS </span>
+                                <span class="tw-text-xl"> + Customer Retention Systems </span>
                             </div>
                             
                         </div>
 
                         <div class="tw-flex tw-flex-col tw-w-full tw-place-items-center tw-place-content-center">
                             <div
-                                class="reveal-up tw-mt-3 tw-max-w-[450px] tw-p-2 tw-text-center tw-text-gray-700 max-lg:tw-max-w-full"
+                                class="reveal-up tw-mt-3 tw-max-w-[450px] tw-p-2 tw-text-center tw-text-gray-400 max-lg:tw-max-w-full"
                             >
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit
-                                Lorem ipsum dolor sit amet.
+                                It's not enough to just have a great product. <br />You need to be able to get your product in front of the right people, and more importantly, you need to be able to keep them coming back for more.
                             </div>
 
                             <div
                                 class="reveal-up tw-mt-10 tw-flex tw-place-items-center tw-gap-4"
                             >
                                 <a
-                                    class="btn tw-bg-[#7e22ce85] tw-shadow-lg tw-shadow-primary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
-                                    href=""
+                                    class="btn !tw-border-[1px] !tw-border-solid !tw-border-white !tw-bg-white !tw-text-black tw-transition-colors tw-duration-[0.3s] hover:!tw-bg-transparent hover:!tw-text-white focus:!tw-bg-transparent focus:!tw-text-white"
+                                    href="https://calendar.app.google/"
                                 >
-                                    Get started
+                                    BOOK A CALL NOW
                                 </a>
-                                <a
-                                    class="btn tw-flex tw-gap-2 !tw-border-solid !tw-border-[1px] !tw-border-black !tw-text-black !tw-bg-transparent tw-transition-colors tw-duration-[0.3s] hover:!tw-bg-white hover:!tw-text-black"
-                                    href=""
+                                <button
+                                    type="button"
+                                    id="learn-more-btn"
+                                    class="btn tw-flex tw-gap-2 !tw-border-solid !tw-border-[1px] !tw-border-white/30 !tw-text-white !tw-bg-transparent tw-transition-colors tw-duration-[0.3s] hover:!tw-bg-white hover:!tw-text-black"
                                 >
                                     <i class="bi bi-play-circle-fill"></i>
                                     <span>Learn more</span>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
-
-                   <!-- <div class="reveal-up tw-max-w-[750px]  tw-max-h-[100vh] tw-w-full tw-flex tw-place-content-center tw-overflow-hidden">
-                        <div class="tw-relative tw-max-w-[450px] slide-in tw-flex tw-place-content-center">
-                            <div class="tw-overflow-hidden">
-                                <img src="./assets/images/home/phone.png" 
-                                        alt="phone" class="tw-h-full" srcset="">
-                            </div>
-                            <div class="tw-absolute tw-bottom-10 tw-max-h-[350px] tw-overflow-hidden">
-                                <div class="swiper slideshow-container 
-                                            tw-p-5 tw-max-h-[350px] tw-relative
-                                            tw-max-w-[350px]
-                                            max-lg:tw-max-w-[300px]
-                                            max-lg:tw-max-h-[260px]
-                                            max-lg:!tw-mt-10 ">
-
-                                    <div class="swiper-wrapper tw-w-full tw-max-h-[650px]  tw-relative"
-                                                id="slideshow" >      
-                                    
-                                    
-                                    </div>
-                                    <p class="prev">&#10094;</a>
-                                    <p class="next">&#10095;</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
 
             </div>
         </section>
 
         <section
-            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+            class="tw-hidden tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
         >
             <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl">
                 Trusted by brands you know
             </h2>
 
+            <!-- this brand-carousel is hidden -->
             <div class="reveal-up carousel-container">
                 <div
                     class="carousel lg:w-place-content-center tw-mt-6 tw-flex tw-w-full tw-gap-5 max-md:tw-gap-2"
@@ -224,11 +172,12 @@
             </div>
         </section>
 
+        <!-- intro video section -->
         <section
             class="tw-relative tw-flex tw-w-full tw-min-h-[60vh] tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
         >
             
-            <div class="reveal-up tw-flex tw-border-[1px] max-lg:tw-w-full tw-border-black tw-rounded-md tw-p-2 tw-max-w-[850px] tw-w-[1000px] tw-min-h-[550px] max-lg:tw-min-w-[320px] max-lg:tw-min-h-[250px] max-lg:tw-h-auto">
+            <div class="reveal-up tw-flex tw-border-[1px] max-lg:tw-w-full tw-border-white/15 tw-rounded-md tw-p-2 tw-max-w-[850px] tw-w-[1000px] tw-min-h-[550px] max-lg:tw-min-w-[320px] max-lg:tw-min-h-[250px] max-lg:tw-h-auto">
 
                 <div class="tw-relative tw-bg-black tw-min-w-full tw-min-h-full tw-overflow-clip tw-rounded-md">
                     <iframe class="tw-absolute tw-top-[50%] tw--translate-y-[50%] tw-left-[50%] tw--translate-x-[50%] tw-w-full tw-h-full" src="https://www.youtube.com/embed/WrfN3iJzrWs?si=BEQ4iPK9NXSM_fkk&amp;controls=0&rel=0&showinfo=0&autoplay=1&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -237,105 +186,65 @@
             </div>
         </section>
 
+        <!-- video collection display section -->
         <section
-            class="tw-relative tw-mt-10 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center lg:tw-p-6"
+            class="tw-relative tw-mt-10 tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center tw-p-[5%] glow-bg"
+            id="work"
         >
+            <span class="reveal-up tw-text-sm tw-font-medium tw-uppercase tw-tracking-[3px] tw-text-[#8b7bff]">Our Work</span>
+            <h2 class="reveal-up tw-mt-2 tw-text-center tw-text-4xl tw-font-semibold tw-uppercase max-md:tw-text-2xl">
+                See examples of our work
+            </h2>
+            <p class="reveal-up tw-mt-3 tw-max-w-[500px] tw-text-center tw-text-gray-400">
+                A glimpse into the content we create for brands — tap play and see the quality for yourself.
+            </p>
 
-            <h2 class="tw-text-4xl max-md:tw-text-3xl">Experience the key benefits</h2>
-            
-            <div
-                class="reveal-up tw-mt-[5%] tw-flex tw-h-full tw-w-full tw-place-content-center tw-gap-8 tw-p-4 max-lg:tw-max-w-full max-lg:tw-flex-col"
-            >
-                <div
-                    class="tw-flex tw-flex-col tw-gap-[200px] tw-h-full tw-max-w-[50%] max-lg:tw-max-w-full tw-px-[10%] max-lg:tw-px-4 max-lg:tw-gap-16 max-lg:tw-w-full lg:tw-top-[20%]"
-                >   
-                    <div class="tw-flex tw-gap-6">
-                        <div class="tw-w-[80px] tw-h-[80px] tw-min-w-[80px] 
-                                    tw-min-h-[80px] tw-text-5xl
-                                    max-lg:tw-min-h-[60px] max-lg:tw-min-w-[60px] max-lg:tw-h-[60px] max-lg:tw-w-[60px]">
-                            <!-- <img src="./assets/images/icons/unlock.png" alt="unlock" class="tw-object-contain tw-w-full tw-h-full"> -->
-                            <i class="bi bi-lock-fill"></i>
-                        </div>
-                        <h3
-                            class="tw-text-4xl max-lg:tw-text-2xl max-lg:tw-font-normal"
-                        >
-                            Easily integrate navigator with your car
-                        </h3>
+            <div class="reveal-up video-grid tw-mt-12 tw-w-full tw-max-w-[900px]">
+                <div class="video-tile video-pos-1">
+                    <video class="tw-h-full tw-w-full tw-object-cover" poster="./assets/images/home/hiking1.jpg" muted loop playsinline preload="metadata" src="./assets/videos/work-1.mp4"></video>
+                    <div class="video-overlay">
+                        <button class="video-play-btn" aria-label="play video"><i class="bi bi-play-fill"></i></button>
+                        <button class="video-mute-btn" aria-label="toggle sound"><i class="bi bi-volume-mute-fill"></i></button>
                     </div>
-
-                    <div class="tw-flex tw-gap-6">
-                        <div class="tw-w-[80px] tw-h-[80px] tw-text-5xl tw-min-w-[80px] tw-min-h-[80px] max-lg:tw-min-h-[60px] max-lg:tw-min-w-[60px] max-lg:tw-h-[60px] max-lg:tw-w-[60px]">
-                            <!-- <img src="./assets/images/icons/lighting.png" alt="unlock" class="tw-object-contain tw-w-full tw-h-full"> -->
-                            <i class="bi bi-lightning-fill"></i>
-                        </div>
-                        <h3
-                            class="tw-text-4xl max-lg:tw-text-2xl max-lg:tw-font-normal"
-                        >
-                            Lightingin fast, Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </h3>
-                    </div>
-
-                    <div class="tw-flex tw-gap-6">
-                        <div class="tw-w-[80px] tw-text-5xl tw-h-[80px] tw-min-w-[80px] tw-min-h-[80px] max-lg:tw-min-h-[60px] max-lg:tw-min-w-[60px] max-lg:tw-h-[60px] max-lg:tw-w-[60px]">
-                            <!-- <img src="./assets/images/icons/credit-card.png" alt="unlock" class="tw-object-contain tw-w-full tw-h-full"> -->
-                            <i class="bi bi-credit-card"></i>
-                        </div>
-                        <h3
-                            class="tw-text-4xl max-lg:tw-text-2xl max-lg:tw-font-normal"
-                        >
-                            Add credit card, sr sit amet consectetur adipisicing elit.
-                        </h3>
-                    </div>
-
-                    <div class="tw-flex tw-gap-6">
-                        <div class="tw-w-[80px] tw-text-5xl tw-h-[80px] tw-min-w-[80px] tw-min-h-[80px] max-lg:tw-min-h-[60px] max-lg:tw-min-w-[60px] max-lg:tw-h-[60px] max-lg:tw-w-[60px]">
-                            <!-- <img src="./assets/images/icons/music.png" alt="unlock" class="tw-object-contain tw-w-full tw-h-full"> -->
-                            <i class="bi bi-music-note-beamed"></i>
-                        </div>
-                        <h3
-                            class="tw-text-4xl max-lg:tw-text-2xl max-lg:tw-font-normal"
-                        >
-                            Integrate music, sr sit amet consectetur adipisicing elit.
-                        </h3>
-                    </div>
-
-                    <div class="tw-flex tw-gap-6">
-                        <div class="tw-w-[80px] tw-text-5xl tw-h-[80px] tw-min-w-[80px] tw-min-h-[80px] max-lg:tw-min-h-[60px] max-lg:tw-min-w-[60px] max-lg:tw-h-[60px] max-lg:tw-w-[60px]">
-                            <!-- <img src="./assets/images/icons/unlock.png" alt="unlock" class="tw-object-contain tw-w-full tw-h-full"> -->
-                            <i class="bi bi-lock-fill"></i>
-                        </div>
-                        <h3
-                            class="tw-text-4xl max-lg:tw-text-2xl max-lg:tw-font-normal"
-                        >
-                            Vola wespon, sr sit amet consectetur adipisicing elit.
-                        </h3>
-                    </div>
-
-                    <div class="tw-flex tw-gap-6">
-                        <div class="tw-w-[80px] tw-text-5xl tw-h-[80px] tw-min-w-[80px] tw-min-h-[80px] max-lg:tw-min-h-[60px] max-lg:tw-min-w-[60px] max-lg:tw-h-[60px] max-lg:tw-w-[60px]">
-                            <!-- <img src="./assets/images/icons/lighting.png" alt="unlock" class="tw-object-contain tw-w-full tw-h-full"> -->
-                            <i class="bi bi-lightning-fill"></i>
-                        </div>
-                        <h3
-                            class="tw-text-4xl max-lg:tw-text-2xl max-lg:tw-font-normal"
-                        >
-                            Integrate Lightning, sr sit amet consectetur adipisicing elit.
-                        </h3>
-                    </div>
-
                 </div>
 
-                <div
-                    class="tw-relative tw-flex tw-max-w-[30%] max-lg:tw-max-w-full tw-flex-col tw-place-items-start tw-gap-4  tw-p-2 max-lg:tw-place-items-center max-lg:tw-place-content-center max-lg:tw-w-full"
-                >
-                    <div
-                        class="tw-top-20 lg:tw-sticky tw-max-h-[800px] tw-h-full tw-max-w-[850px] max-lg:tw-max-h-fit max-lg:tw-max-w-[320px] tw-overflow-hidden tw-rounded-lg"
-                    >
-                        <img
-                            src="./assets/images/home/phone2.png"
-                            alt="phone"
-                            class="tw-h-full tw-w-full tw-object-contain"
-                        />
+                <div class="video-tile video-pos-2">
+                    <video class="tw-h-full tw-w-full tw-object-cover" poster="./assets/images/home/mountain.jpg" muted loop playsinline preload="metadata" src="./assets/videos/work-2.mp4"></video>
+                    <div class="video-overlay">
+                        <button class="video-play-btn" aria-label="play video"><i class="bi bi-play-fill"></i></button>
+                        <button class="video-mute-btn" aria-label="toggle sound"><i class="bi bi-volume-mute-fill"></i></button>
+                    </div>
+                </div>
+
+                <div class="video-tile video-pos-3">
+                    <video class="tw-h-full tw-w-full tw-object-cover" poster="./assets/images/home/hiking4.jpg" muted loop playsinline preload="metadata" src="./assets/videos/work-3.mp4"></video>
+                    <div class="video-overlay">
+                        <button class="video-play-btn" aria-label="play video"><i class="bi bi-play-fill"></i></button>
+                        <button class="video-mute-btn" aria-label="toggle sound"><i class="bi bi-volume-mute-fill"></i></button>
+                    </div>
+                </div>
+
+                <div class="video-tile video-pos-4">
+                    <video class="tw-h-full tw-w-full tw-object-cover" poster="./assets/images/home/hiking2.jpg" muted loop playsinline preload="metadata" src="./assets/videos/work-4.mp4"></video>
+                    <div class="video-overlay">
+                        <button class="video-play-btn" aria-label="play video"><i class="bi bi-play-fill"></i></button>
+                        <button class="video-mute-btn" aria-label="toggle sound"><i class="bi bi-volume-mute-fill"></i></button>
+                    </div>
+                </div>
+
+                <div class="video-tile video-pos-5">
+                    <video class="tw-h-full tw-w-full tw-object-cover" poster="./assets/images/home/hiking3.jpg" muted loop playsinline preload="metadata" src="./assets/videos/work-5.mp4"></video>
+                    <div class="video-overlay">
+                        <button class="video-play-btn" aria-label="play video"><i class="bi bi-play-fill"></i></button>
+                        <button class="video-mute-btn" aria-label="toggle sound"><i class="bi bi-volume-mute-fill"></i></button>
+                    </div>
+                </div>
+
+                <div class="video-tile video-pos-6">
+                    <video class="tw-h-full tw-w-full tw-object-cover" poster="./assets/images/home/sample.jpg" muted loop playsinline preload="metadata" src="./assets/videos/work-6.mp4"></video>
+                    <div class="video-overlay">
+                        <button class="video-play-btn" aria-label="play video"><i class="bi bi-play-fill"></i></button>
+                        <button class="video-mute-btn" aria-label="toggle sound"><i class="bi bi-volume-mute-fill"></i></button>
                     </div>
                 </div>
             </div>
@@ -345,7 +254,7 @@
             class="tw-relative tw-mt-10 tw-flex tw-min-h-[20vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center lg:tw-p-6"
         >
 
-            <div class="tw-w-full tw-flex tw-mt-8 tw-h-fit
+            <div class="tw-hidden tw-w-full tw-mt-8 tw-h-fit
                         tw-max-w-[100vw] tw-overflow-hidden tw-relative">
                 <div class="edge-gradient tw-z-10 tw-absolute tw-w-full tw-h-full tw-left-0">
                 </div>
@@ -356,11 +265,16 @@
             </div>
             <div class="tw-w-full tw-flex tw-relative tw-h-fit tw-mt-8
                     tw-max-w-[100vw] 
-                    tw-overflow-hidden">
-                <div class="edge-gradient tw-z-10 tw-absolute tw-w-full tw-h-full tw-left-0">
-                </div>
-                <div class="places-container scroller tw-flex tw-w-full tw-gap-3" 
-                    data-direction="left" data-speed="slow" >
+                    tw-overflow-hidden tw-flex-col">
+                <span class="reveal-up tw-text-center tw-mb-4 tw-text-lg tw-text-gray-300">We do marketing for: </span>
+                <div class="tw-w-full tw-flex tw-relative tw-h-fit
+                        tw-max-w-[100vw] 
+                        tw-overflow-hidden">
+                    <div class="edge-gradient tw-z-10 tw-absolute tw-w-full tw-h-full tw-left-0">
+                    </div>
+                    <div class="places-container scroller tw-flex tw-w-full tw-gap-3" 
+                        data-direction="left" data-speed="slow" >
+                    </div>
                 </div>
             </div>
             
@@ -381,15 +295,16 @@
                     >
 
             <h2 class="tw-text-3xl max-md:tw-text-2xl tw-mt-7">
-                Plan your next desitnation
+                Do you question whether this marketing will work for your business?<br /> Do you need a system that builds you a loyal customer base? 
             </h2>
+            <p>Book a call with us Now. We'll have an indepth talk about where your business is at and how we can help you take it to the next level. You get to ask all the questions you have. We guarantee that your business will see significant growth with our proven strategies. It's fast and FREE. So why wait?</p>
 
-            <a href="" class="btn !tw-text-black !tw-bg-transparent tw-flex tw-gap-2 !tw-border-[1px] !tw-border-black tw-mt-[2%] max-md:tw-mt-8 hover:tw-scale-105 tw-duration-[0.3s]">
-                <span>Book now</span>
+            <a href="https://calendar.app.google/" class="btn !tw-text-white !tw-bg-transparent tw-flex tw-gap-2 !tw-border-[1px] !tw-border-white/30 tw-mt-[2%] max-md:tw-mt-8 hover:tw-scale-105 tw-duration-[0.3s]">
+                <span>Book a call Now</span>
                 <i class="bi bi-send-fill"></i>
             </a>
 
-            <div class="tw-flex max-md:tw-mt-8 tw-place-items-center tw-mt-[5%] tw-gap-6">
+            <div class="tw-hidden max-md:tw-mt-8 tw-place-items-center tw-mt-[5%] tw-gap-6">
 
                 <div>
                     <img src="./assets/images/brand-logos/app-store-badge.png" 
@@ -405,109 +320,72 @@
         </section>
 
         <section
-            class="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%] max-lg:tw-p-3"
+            class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[5%] max-lg:tw-p-3 glow-bg"
         >
+            <!--<span class="reveal-up tw-text-sm tw-font-medium tw-uppercase tw-tracking-[3px] tw-text-[#8b7bff]">Latest Stories</span> -->
             <h3
-                class="reveal-up tw-text-center tw-text-4xl tw-font-medium max-md:tw-text-2xl"
+                class="reveal-up tw-mt-2 tw-text-center tw-text-4xl tw-font-semibold max-md:tw-text-2xl"
             >
-                Read our articles ✨
+                Your Journey With Us
             </h3>
+            <p class="reveal-up tw-mt-3 tw-max-w-[550px] tw-text-center tw-text-gray-400">
+                This is a summary of 3 simple steps we take to solve your problem.
+            </p>
+
             <!-- articles -->
             <div
-                class="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col"
+                class="reveal-up tw-mt-12 tw-grid tw-w-full tw-max-w-[1100px] tw-grid-cols-3 tw-gap-6 max-lg:tw-grid-cols-1"
             >
-                <a
-                    href=""
-                    class="tw-flex tw-border-[1px] tw-border-black tw-h-[400px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[300px]"
-                >
-                    <div
-                        class="tw-h-[250px] tw-w-full tw-overflow-hidden tw-rounded-md"
-                    >
+                <a href="" class="article-card">
+                    <div class="article-card-image">
                         <img
                             src="./assets/images/home/forest.jpg"
                             alt="article image"
-                            class="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.04]"
                             srcset=""
                         />
                     </div>
-                    <h3
-                        class="tw-mt-2 tw-text-2xl tw-font-semibold max-md:tw-text-xl"
-                    >
-                        Article 1
-                    </h3>
-                    <p class="tw-text-gray-800">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ab, explicabo!
+                    <span class="article-tag">Studying</span>
+                    <p class="article-desc">
+                        We study your business, your value, your delivery system, your target audience, and your competitors. <br /> We learn about your business goals and your vision so we can align with them.
+                        <br /> By the time we are done, we know you like the back of our hand!
                     </p>
-                    <span>
-                        <span>Learn more</span>
-                        <i class="bi bi-arrow-right"></i>
-                    </span>
                 </a>
-                <a
-                    href=""
-                    class="tw-border-[1px] tw-border-black tw-flex tw-h-[400px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[300px]"
-                >
-                    <div
-                        class="tw-h-[250px] tw-w-full tw-overflow-hidden tw-rounded-md"
-                    >
+                <a href="" class="article-card">
+                    <div class="article-card-image">
                         <img
                             src="./assets/images/home/mountain.jpg"
                             alt="article image"
-                            class="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.04]"
                             srcset=""
                         />
                     </div>
-                    <h3
-                        class="tw-mt-2 tw-text-2xl tw-font-semibold max-md:tw-text-xl"
-                    >
-                        Article 2
-                    </h3>
-                    <p class="tw-text-gray-800">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ab, explicabo!
+                    <span class="article-tag">Cloning and Content Production</span>
+                    <p class="article-desc">
+                        We create the necessary custom avatars, brand models, brand voices, 3d representations of your products and services.<br /> If you already have a brand voice and a brand model we can clone them and place them in the brand kit for 24/7 access.
+                        Now that we have a clear understanding of your brand, we produce high-quality, high-converting video and image content for your marketing campaigns, including social media posts, blog articles, and video scripts.<br /> You can rest because we do all the strategising, planning, and production for you. We also provide you with a content calendar so know what content is being produced and when it will be published.
                     </p>
-                    <span>
-                        <span>Learn more</span>
-                        <i class="bi bi-arrow-right"></i>
-                    </span>
                 </a>
-                <a
-                    href=""
-                    class="tw-border-[1px] tw-border-black tw-flex tw-h-[400px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[300px]"
-                >
-                    <div
-                        class="tw-h-[250px] tw-w-full tw-overflow-hidden tw-rounded-md"
-                    >
+                <a href="" class="article-card">
+                    <div class="article-card-image">
                         <img
                             src="./assets/images/home/photography.jpg"
                             alt="article image"
-                            class="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.04]"
                             srcset=""
                         />
                     </div>
-                    <h3
-                        class="tw-mt-2 tw-text-2xl tw-font-semibold max-md:tw-text-xl"
-                    >
-                        Article 3
-                    </h3>
-                    <p class="tw-text-gray-800">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ab, explicabo!
+                    <span class="article-tag">Customer Retention</span>
+                    <p class="article-desc">
+                        Now new leads are coming in. Great! But we don't stop there. We help you build a loyal customer base by providing you with a customer retention system that will keep the customers remembering your brand. <br />We create a funnel to channel your customers' information into a database, and then we create an automated emails/SMS system that will keep your clients engaged with your brand and what it offers. <br />Also from the same database, you get to query and understand your customers'  buying habits and preferences. This way you can provide them with what they want, when they want it, and how they want it. You'll be ahead of your competitors and the become the go-to brand in your niche. 
                     </p>
-                    <span>
-                        <span>Learn more</span>
-                        <i class="bi bi-arrow-right"></i>
-                    </span>
                 </a>
             </div>
         </section>
 
+        <!-- faq section -->
         <section
             class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]"
         >
             <h3
-                class="tw-text-4xl tw-font-medium tw-text-gray-800 max-md:tw-text-2xl"
+                class="tw-text-4xl tw-font-medium tw-text-gray-300 max-md:tw-text-2xl"
             >
                 Faq
             </h3>
@@ -520,11 +398,11 @@
                     <div
                         class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
                     >
-                        <span>What license are the source code?</span>
+                        <span>What kind of content do you create?</span>
                         <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
                     </div>
                     <div class="content">
-                        All the templates are under MIT license
+                        We create high-quality, and high-converting video and image content for your marketing campaigns, including social media posts, blog articles, and video scripts. We produce authentic, scroll-stopping UGC-style videos for brands — product reviews, unboxings, testimonials, and everyday lifestyle content designed to look native to TikTok, Instagram Reels, and YouTube Shorts.
                     </div>
                 </div>
 
@@ -534,20 +412,11 @@
                     <div
                         class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
                     >
-                        <span>Can I request new templates?</span>
+                        <span>Can I request revisions?</span>
                         <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
                     </div>
                     <div class="content">
-                        you can request a generic template from
-                        <a
-                            href="https://github.com/PaulleDemon/landing-pages/issues/new/choose"
-                            class="tw-underline"
-                        >
-                            Github template request</a
-                        >. If you are looking for Custom design you should
-                        <a href="https://tally.so/r/woO0Kx" class="tw-underline"
-                            >contact here</a
-                        >
+                        Yes, we offer revisions to ensure that the final product meets your expectations. We want you to be completely satisfied with the content we create for you.
                     </div>
                 </div>
 
@@ -557,14 +426,11 @@
                     <div
                         class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
                     >
-                        <span>I need a custom template?</span>
+                        <span>Do I own full usage rights to the content?</span>
                         <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
                     </div>
                     <div class="content">
-                        If you are looking for Custom design you can
-                        <a href="https://tally.so/r/woO0Kx" class="tw-underline"
-                            >contact here</a
-                        >
+                        Yes. Once delivered, you receive full commercial usage rights to run the content on your own paid ads, organic social, website, and email — no additional licensing fees.
                     </div>
                 </div>
 
@@ -574,16 +440,11 @@
                     <div
                         class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
                     >
-                        <span>Will you add new templates?</span>
+                        <span>How soon can I expect an increase in sales or more customers?</span>
                         <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
                     </div>
                     <div class="content">
-                        New templates are added every Friday. So star ⭐️
-                        <a
-                            href="https://github.com/PaulleDemon/awesome-landing-pages"
-                            class="tw-underline"
-                            >Github</a
-                        >
+                        Once your first batch of content goes live, you'll start seeing early performance signals — engagement, sign-ups, clickthrough rates typically show up within 10 to 28 days of launching a test campaign. <br /> <strong>At 90 days:</strong> you'll have enough data to know what's actually working. This is usually the point where sales impact becomes measurable, not just engagement; also, your best-performing content formats get identified and repeated. <br /> <strong>Between 6 and 12 months:</strong> Organic social becomes a genuinely compounding channel. This is where most brands see their strongest ROI, since content and audience trust all build on each other over time. The algorithms works differently in different platforms, but the general pattern is the same: the more content you have, the more data you have, the better your content gets, and the more your audience grows. <br /> <strong>This is what you can usually expect but results may vary depending on your business, your product, and your target audience and platform of choice.</strong>
                     </div>
                 </div>
             </div>
@@ -592,19 +453,17 @@
                 class="tw-mt-20 tw-flex tw-flex-col tw-place-items-center tw-gap-4"
             >
                 <div class="tw-text-3xl max-md:tw-text-2xl">
-                    Still have questions?
+                    Still have questions? Don't delay to ask. It's Free!
                 </div>
-                <a
-                    href="http://"
-                    class="btn !tw-rounded-full !tw-bg-black"
-                >
-                    Contact
+                <a href="https://calendar.app.google/" class="btn !tw-text-white !tw-bg-transparent tw-flex tw-gap-2 !tw-border-[1px] !tw-border-white/30 tw-mt-[2%] max-md:tw-mt-8 hover:tw-scale-105 tw-duration-[0.3s]">
+                  <span>Call us Today</span>
+                  <i class="bi bi-send-fill"></i>
                 </a>
             </div>
         </section>
 
         <section
-            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%] max-md:tw-px-2"
+            class="tw-hidden tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%] max-md:tw-px-2"
         >
 
             <div class="tw-bg-gray-100 tw-border-[1px] tw-border-black tw-h-[550px] tw-flex max-lg:tw-flex-col tw-max-h-[550px] tw-max-w-[80%]  max-lg:tw-max-h-fit max-lg:tw-h-full max-lg:tw-max-w-full tw-overflow-hidden tw-rounded-xl tw-w-full">
@@ -652,29 +511,22 @@
         </section>
 
         <footer
-            class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col"
+            class="tw-mt-auto tw-flex tw-w-full tw-place-content-between tw-place-items-center tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col max-md:tw-place-items-center max-md:tw-gap-8 ray-corner"
         >
-            <div
-                class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
-            >
+            <div class="tw-flex tw-place-items-center">
                 <img
                     src="./assets/logo/logo.png"
                     alt="logo"
                     srcset=""
-                    class="tw-max-w-[120px]"
+                    class="tw-max-w-[120px] logo-glow"
                 />
-                <div>
-                    2 Lord Edward St,
-                    <br />
-                    D02 P634,
-                    <br />
-                    United States
-                </div>
-                <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
+            </div>
+
+            <div
+                class="tw-flex tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-place-items-center"
+            >
+                <div class="tw-text-lg tw-font-semibold">Follow us</div>
                 <div class="tw-flex tw-gap-4 tw-text-2xl">
-                    <a href="" aria-label="Facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
                     <a
                         href="https://twitter.com/@pauls_freeman"
                         aria-label="Twitter"
@@ -682,37 +534,30 @@
                         <i class="bi bi-twitter"></i>
                     </a>
                     <a
-                        href="https://instagram.com/"
-                        class="tw-h-[40px] tw-w-[40px]"
-                        aria-label="Instagram"
+                        href=""
+                        aria-label="LinkedIn"
                     >
-                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
                     </a>
                 </div>
             </div>
-
-            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
-                <h2 class="tw-text-3xl max-md:tw-text-xl">Company</h2>
-                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                    <a href="" class="footer-link">Use cases</a>
-                    <a href="" class="footer-link">Integrations</a>
-                    <a href="" class="footer-link">Change logs</a>
-                    <a href="" class="footer-link">Blogs</a>
-                    <a href="" class="footer-link">Contact</a>
-                </div>
-            </div>
-
-            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
-                <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
-                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                    <a href="" class="footer-link">About us</a>
-                    <a href="" class="footer-link">FAQ</a>
-                    <a href="" class="footer-link">Contact Us</a>
-                    <a href="" class="footer-link">Blogs</a>
-                    <a href="" class="footer-link">Privacy policy</a>
-                </div>
-            </div>
         </footer>
+
+        <!-- Learn more popup -->
+        <div id="learn-more-modal" class="modal-overlay">
+            <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="learn-more-title">
+                <button type="button" id="modal-close-btn" class="modal-close" aria-label="Close">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+                <h3 id="learn-more-title" class="modal-title">Let's talk</h3>
+                <p class="modal-text">
+                    Booking a call with us is absolutely free. We get to answer your marketing questions, analyze your business, and we get to know what your business actually needs. You can't assign a cure before a diagnosis, right? 😉 So don't delay, book your appointment today!
+                </p>
+                <a href="https://calendar.app.google/" class="btn !tw-border-[1px] !tw-border-solid !tw-border-white !tw-bg-white !tw-text-black tw-transition-colors tw-duration-[0.3s] hover:!tw-bg-transparent hover:!tw-text-white tw-mt-6">
+                    Book a call now
+                </a>
+            </div>
+        </div>
     </body>
 
     <script
@@ -727,10 +572,6 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     ></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 
     <script src="./index.js"></script>
 </html>
