@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Thank you | AI Coven</title>
+<link rel="shortcut icon" href="./assets/logo/logo.png" type="image/x-icon" />
+<link rel="stylesheet" href="css/index.css" />
+<style>
+  body{ color:#fff; min-height:100vh; display:flex; flex-direction:column; margin:0; }
+  .top{ position:relative; display:flex; align-items:center; height:100px; padding:0 5%; }
+  .top img{ width:84px; height:84px; object-fit:contain; position:relative; z-index:2; }
+  .top .brand{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    font-size:1.2rem; font-weight:700; text-transform:uppercase; letter-spacing:4px; }
+  main{ flex:1; width:100%; max-width:640px; margin:0 auto; padding:0 5% 36px;
+    display:flex; flex-direction:column; align-items:center; text-align:center; gap:18px; }
+  h1{ margin:0; font-size:clamp(1.8rem,5vw,2.8rem); font-weight:700; line-height:1.15; text-transform:uppercase; }
+  .red{ color:rgb(255,0,0); }
+  p{ margin:0; color:#9ca3af; font-size:1.02rem; line-height:1.55; }
+  .days{ width:100%; display:flex; flex-direction:column; gap:10px; text-align:left; }
+  .day{ display:flex; gap:14px; align-items:baseline; padding:12px 14px; border:1px solid rgba(255,255,255,.18);
+    border-radius:8px; background:rgba(255,255,255,.03); }
+  .day b{ min-width:48px; font-weight:700; }
+  .day span{ color:#e5e7eb; line-height:1.4; }
+  .zoom{ color:#fff; font-size:1.1rem; }
+  .vids{ width:100%; display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .slot{ aspect-ratio:9/16; border:1px dashed rgba(255,255,255,.3); border-radius:8px; display:grid; place-items:center; color:#9ca3af; font-size:.9rem; background:rgba(255,255,255,.03); }
+  .vids video{ width:100%; aspect-ratio:9/16; object-fit:cover; border-radius:8px; }
+  @media (max-width:600px){ .top{height:84px} .top img{width:66px;height:66px} .top .brand{font-size:1rem} }
+  @media (prefers-reduced-motion:reduce){ .logo-glow{ animation:none } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <img src="./assets/logo/logo.png" alt="AI Coven logo" class="logo-glow" />
+  <span class="brand brand-glow">AI Coven</span>
+</header>
+
+<main class="glow-bg">
+  <h1>Thank you.</h1>
+  <p>Soon you'll be able to create content like this:</p>
+
+  <div class="vids">
+    <video controls playsinline preload="metadata" poster="./assets/media/phone-1.jpg" src="./assets/media/phone-1.mp4"></video>
+    <video controls playsinline preload="metadata" poster="./assets/media/ugc-1.jpg" src="./assets/media/ugc-1.mp4"></video>
+  </div>
+
+  <p>Your details have been sent to you via email.</p>
+  <p class="zoom">See you soon.</p>
+</main>
+
+</body>
+</html>
